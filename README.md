@@ -16,7 +16,6 @@ https://github.com/XJINE/Unity_KeyEventManager.git?path=Assets/Packages/KeyEvent
 
 This project use following resources.
 
-- https://github.com/XJINE/Unity_SingletonMonoBehaviour
 - Unity.InputSystem
 
 ## How to Use

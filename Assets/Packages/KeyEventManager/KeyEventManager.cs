@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-public class KeyEventManager : SingletonMonoBehaviour<KeyEventManager>
+public class KeyEventManager : MonoBehaviour
 {
     public enum KeyInputType
     {
