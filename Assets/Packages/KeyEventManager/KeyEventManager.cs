@@ -16,9 +16,9 @@ public class KeyEventManager : MonoBehaviour
     [System.Serializable]
     public class KeyEvent
     {
-        public Key          key;
-        public KeyInputType inputType;
-        public UnityEvent   handler;
+        public Key                  key;
+        public KeyInputType         inputType;
+        public UnityEvent<Keyboard> handler;
     }
 
     [field: SerializeField] public List<KeyEvent> KeyEvents { get; private set; }
@@ -40,7 +40,7 @@ public class KeyEventManager : MonoBehaviour
             _                                 => false
         } where satisfied select keyEvent)
         {
-            keyEvent.handler.Invoke();
+            keyEvent.handler.Invoke(keyboard);
         }
     }
 
